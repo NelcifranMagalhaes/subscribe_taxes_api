@@ -1,0 +1,68 @@
+curl --location 'http://localhost:3000/shoppings' \
+--header 'Content-Type: application/json' \
+--data '{
+   "shopping":{
+       "products": [ {
+           "name": "imported bottle of perfume",
+           "product_price": 27.99,
+           "product_quantity": 1
+       },
+       {
+           "name": "bottle of perfume",
+           "product_price": 18.99,
+           "product_quantity": 1
+       },
+        {
+           "name": "packet of headache pills",
+           "product_price": 9.75,
+           "product_quantity": 1
+       },
+       {
+           "name": "imported boxes of chocolates",
+           "product_price": 11.25,
+           "product_quantity": 3
+       }
+       ]
+   } 
+}'
+
+------------------------------------------------------------------------------
+
+{
+   "shopping":{
+       "products": [ {
+           "name": "book",
+           "product_price": 12.49,
+           "product_quantity": 2
+       },
+       {
+           "name": "music CD",
+           "product_price": 14.99,
+           "product_quantity": 1
+       },
+        {
+           "name": "chocolate bar",
+           "product_price": 0.85,
+           "product_quantity": 1
+       }
+       ]
+   } 
+}
+
+------------------------------------------------------------------------------
+
+{
+   "shopping":{
+       "products": [ {
+           "name": "imported box of chocolates",
+           "product_price": 10,
+           "product_quantity": 1
+       },
+       {
+           "name": "imported bottle of perfume",
+           "product_price": 47.50,
+           "product_quantity": 1
+       }
+       ]
+   } 
+}

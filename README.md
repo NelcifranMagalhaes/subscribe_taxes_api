@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API to calculate products taxes in a shopping.
 
-Things you may want to cover:
+* **System dependencies**
 
-* Ruby version
+	-- `ruby 3.3.1`
 
-* System dependencies
+	-- `Rails 7.1.3.2`
 
-* Configuration
+	-- `(PostgreSQL) 14.11`
+	
+* **Configuration**
+	-- Install [ruby](https://www.ruby-lang.org/pt/) 
+	-- install [rails](https://rubyonrails.org/)
+* **Database creation**
+ -- `rails db:create`
+ -- `rails db:migrate`
 
-* Database creation
+* **Database initialization**
+	-- `rails db:seed`
+  
+* **How to run the test suite**
+-- `rails test`
 
-* Database initialization
+* ***Notes***
+	-- You need to be able to send some request to API at [localhost](http://localhost:3000/shoppings)
+	-- There is a file to help to test the API in `utils/help.txt` there we have the web request to copy-paste
+* ***API DOC***
+![Request Example](utils/api_rquest_helper.png)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	-- `products` (object ARRAY)
+	-- `name`(STRING)
+	--`product_price`(FLOAT)
+	-- `product_quantity`(INTEGER)
